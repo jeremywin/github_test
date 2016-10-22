@@ -8,6 +8,8 @@
         <div class="slds-grid">
             <div class="slds-col--padded">	
             Test -- test this page commit to git but not to salesforce
+
+            Added another update to start from master into a new project
 	            <div id="lightning" />	 
         	</div>
             <div class="slds-col--padded">	
