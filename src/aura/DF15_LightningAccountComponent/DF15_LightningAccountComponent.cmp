@@ -1,0 +1,53 @@
+<aura:component controller="DF15_LightningAccountController" implements="flexipage:availableForAllPageTypes" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>	
+	<aura:registerEvent name="DF15_ContactLookupEvent" type="c:DF15_ContactLookupEvent" />
+	<ltng:require styles="/resource/SLDS090/assets/styles/salesforce-lightning-design-system-ltng.css" />   
+	<aura:attribute name="accounts" type="Account[]"></aura:attribute>
+	
+	<div class="slds">
+        <div class="slds-grid slds-grid--vertical">
+        <aura:iteration items="{!v.accounts}" var="acc">
+            <div class="slds-col" style="margin-top:1rem;">
+            <div class="slds-card" >	        
+                <div class="slds-card__body">
+                    <ul>                        
+                        <li class="slds-tile slds-media">
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                                    <p class="slds-tile__title slds-truncate">{!acc.Name}</p>
+                                </div>                                
+                                <dl class="dl--horizontal slds-text-body--small">
+                                    <dt class="slds-dl--horizontal__label">
+                                        <p class="slds-truncate">Account ID</p>
+                                    </dt>
+                                    <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                                        <p class="slds-truncate"><ui:outputText aura:id="thisID" value="{!acc.Id}" /></p>
+                                    </dd>
+                                    <dt class="slds-dl--horizontal__label">
+                                        <p class="slds-truncate">Account Phone</p>
+                                    </dt>
+                                    <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                                        <p class="slds-truncate">{!acc.Phone}</p>
+                                    </dd>
+                                </dl>
+                            </div> 
+                            <div class="slds-media__figure">
+                              <c:button class="slds-button slds-button--neutral" 
+                                 label="Contacts" 
+                                 svgXlinkHref="/resource/SLDS090/assets/icons/standard-sprite/svg/symbols.svg#contact" 
+                                 svgClass="slds-icon slds-icon-text-default"
+                                 onclick="{!c.lookForContacts}"
+                                 data="{!acc.Id}"
+                                 />
+                             </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+                </div>
+        </aura:iteration>	    
+	    </div>
+	</div>
+	
+</aura:component>

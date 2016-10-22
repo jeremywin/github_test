@@ -1,0 +1,43 @@
+<aura:component controller="DF15_LightningContactController" implements="flexipage:availableForAllPageTypes" >
+	<aura:handler event="c:DF15_ContactLookupEvent" value="{!this}" action="{!c.receiveContacts}" />	
+	<ltng:require styles="/resource/SLDS090/assets/styles/salesforce-lightning-design-system-ltng.css" />   
+	<aura:attribute name="contacts" type="Contact[]"></aura:attribute>
+	
+	<div class="slds">
+        <div class="slds-grid slds-grid--vertical">
+        <aura:iteration items="{!v.contacts}" var="con">
+            <div class="slds-col" style="margin-top:1rem;">
+            <div class="slds-card">	        
+                <div class="slds-card__body">
+                    <ul>                        
+                        <li class="slds-tile slds-hint-parent">
+                            <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+                                <p class="slds-tile__title slds-truncate">{!con.Name}</p>
+                            </div>
+                            <div class="slds-tile__detail">
+                                <dl class="dl--horizontal slds-text-body--small">
+                                    <dt class="slds-dl--horizontal__label">
+                                        <p class="slds-truncate">Contact ID</p>
+                                    </dt>
+                                    <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                                        <p class="slds-truncate">{!con.Id}</p>
+                                    </dd>
+                                    <dt class="slds-dl--horizontal__label">
+                                        <p class="slds-truncate">Contact Phone</p>
+                                    </dt>
+                                    <dd class="slds-dl--horizontal__detail slds-tile__meta">
+                                        <p class="slds-truncate">{!con.Phone}</p>
+                                    </dd>
+                                </dl>
+                            </div>        	            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+                </div>
+        </aura:iteration>	    
+	    </div>
+	</div>
+	
+</aura:component>

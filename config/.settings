@@ -1,0 +1,20 @@
+{
+    "projectName": "github_test",
+    "username": "jeremy.winchester@gmail.com",
+    "id": "8c1a66a0-9868-11e6-bf60-2d990cf9bbc4",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://jeremywinchester-dev-ed.my.salesforce.com",
+    "workspace": "/users/Jeremy/Documents/",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "AuraDefinitionBundle",
+        "CustomObject",
+        "FlexiPage",
+        "StaticResource"
+    ]
+}

@@ -1,0 +1,6 @@
+<aura:component controller="forceinputAccount" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <aura:attribute name="account" type="Account" default="{ sobjectType: 'Account' }"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <force:outputField value="{!v.account.Name}" />
+    <force:inputField value="{!v.account.Name}" />    
+</aura:component>

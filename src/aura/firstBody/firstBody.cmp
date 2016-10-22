@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <div style="height:100%;">
+	    <p>I am the first body</p>
+	</div>
+</aura:component>

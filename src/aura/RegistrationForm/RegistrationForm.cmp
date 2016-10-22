@@ -1,0 +1,20 @@
+<aura:component >
+
+<aura:attribute name="first" type="String" />
+<aura:attribute name="last" type="String" />
+<aura:attribute name="phone" type="String" />
+<aura:attribute name="salutation" type="String" />
+
+<ui:inputSelect label = "Salutation" value = "{!v.salutation}">
+    <ui:inputSelectOption text="Dr." />
+    <ui:inputSelectOption text="Mr." />
+    <ui:inputSelectOption text="Mrs." />
+    <ui:inputSelectOption text="Ms." />
+</ui:inputSelect>
+<ui:inputText label="First Name" value="{!v.first}" />
+<ui:inputText label="Last Name" value="{!v.last}" />
+<ui:inputPhone label = "Phone Number" value = "{!v.phone}" />
+
+<ui:button label="Submit" />
+    
+</aura:component>

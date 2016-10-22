@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable">
+
+  <aura:attribute name="task" type="Task" default="{ sobjectType: 'Task' }"/>
+
+
+  <force:inputField value="{!v.task.Subject}" />
+
+  <force:inputField value="{!v.task.Description}" />
+
+  <force:inputField value="{!v.task.Priority}" />
+
+  <force:inputField value="{!v.task.ActivityDate}" />
+
+  <force:inputField value="{!v.task.WhoId}" />
+
+  <force:inputField value="{!v.task.WhatId}" />
+
+</aura:component>

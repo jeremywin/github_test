@@ -1,0 +1,36 @@
+<apex:page showHeader="true" sidebar="true">
+
+	<apex:includeScript value="/lightning/lightning.out.js" />	
+
+	<apex:stylesheet value="/resource/SLDS090/assets/styles/salesforce-lightning-design-system-ltng.css" />
+
+    <div class="slds">
+        <div class="slds-grid">
+            <div class="slds-col--padded">	
+	            <div id="lightning" />	 
+        	</div>
+            <div class="slds-col--padded">	
+	            <div id="lightning2" />	
+        	</div>        	
+    	</div>
+	</div>
+
+
+    <script>
+	    $Lightning.use("c:VisualforceLightningInPageTestApp", function() {
+	      $Lightning.createComponent("c:DF15_LightningAccountComponent",
+	      { label : "" },
+	      "lightning",
+	      function(cmp) {
+	        // do some stuff
+	      });	      
+	      $Lightning.createComponent("c:DF15_LightningContactComponent",
+	      { label : "" },
+	      "lightning2",
+	      function(cmp) {
+	        // do some stuff
+	      });				      
+	    });
+	</script>	
+
+</apex:page>

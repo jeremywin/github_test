@@ -1,0 +1,4 @@
+<apex:page >
+    <apex:stylesheet value="/resource/SLDS090/assets/styles/salesforce-lightning-design-system-ltng.css" />
+    <flow:interview name="New_Customer_Flow" />
+</apex:page>

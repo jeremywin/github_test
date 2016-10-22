@@ -1,0 +1,5 @@
+<aura:component >
+	<aura:registerEvent name="ns_navigateToView" type="c:ns_navigateToView" />
+    <div>Using view 'bar': {!v.message}</div>
+    <ui:button label="Navigate to foo" press="{!c.navToFoo}"/>
+</aura:component>

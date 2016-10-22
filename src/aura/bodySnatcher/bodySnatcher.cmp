@@ -1,0 +1,26 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+
+	<div aura:id="changes" style="max-height:100%;">
+	    <P>I am the original</P>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+		<p>I am filling space, just filling space to drive the length of the page down to see if this v body method will actually solve the scrolling issues showing up on ios.</p>
+    <ui:button aura:id="pressChange" press="{!c.firstSwitch}" label="pressChange"/>	
+	</div>
+		
+
+
+
+</aura:component>
