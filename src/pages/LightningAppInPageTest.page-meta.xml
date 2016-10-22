@@ -7,6 +7,16 @@
     <packageVersions>
         <majorNumber>1</majorNumber>
         <minorNumber>9</minorNumber>
+        <namespace>relateiq</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>11</minorNumber>
         <namespace>sf_chttr_apps</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>7</minorNumber>
+        <namespace>sf_com_apps</namespace>
     </packageVersions>
 </ApexPage>
