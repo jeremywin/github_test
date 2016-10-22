@@ -1736,15 +1736,17 @@
         "mmState": "clean"
     },
     "LightningAppInPageTest.page": {
-        "createdById": "00561000000v3z2AAA",
-        "createdByName": "Jeremy Winchester",
-        "createdDate": "2015-10-22T00:16:21.000Z",
-        "fileName": "unpackaged/pages/LightningAppInPageTest.page",
-        "fullName": "LightningAppInPageTest",
         "id": "06661000001p4DgAAI",
+        "name": "LightningAppInPageTest",
+        "createdDate": "2015-10-22T00:16:21.000+0000",
+        "createdById": "00561000000v3z2AAA",
+        "namespacePrefix": null,
         "lastModifiedById": "00561000000v3z2AAA",
+        "lastModifiedDate": "2016-10-22T20:59:26.000+0000",
+        "fullName": "LightningAppInPageTest",
+        "fileName": "unpackaged/pages/LightningAppInPageTest.page",
+        "createdByName": "Jeremy Winchester",
         "lastModifiedByName": "Jeremy Winchester",
-        "lastModifiedDate": "2016-10-22T15:34:04.000Z",
         "manageableState": "unmanaged",
         "type": "ApexPage",
         "mmState": "clean"
